@@ -4,34 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hassan Alnabres — Game Score Panel</title>
-  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-
- <header>
+  <header>
     <h1>Hassan Alnabres — Game Simulator</h1>
     <p class="subtitle">This page simulates game actions with buttons.</p>
   </header>
-  
+
   <main>
-    <section>
-      <button id="save-player-btn">Save Player</button>
-      <button id="record-score-btn">Record High Score</button>
-      <button id="reset-game-btn">Reset Game</button>
-      <button id="view-leaderboard-btn">View Leaderboard</button>
+    <section class="controls">
+      <h2>Controls</h2>
+      <div class="button-group">
+        <button id="save-player-btn">Save Player</button>
+        <button id="record-score-btn">Record High Score</button>
+        <button id="reset-game-btn">Reset Game</button>
+        <button id="view-leaderboard-btn">View Leaderboard</button>
+      </div>
     </section>
 
-    <section>
+    <section class="status-section">
       <h2>Status</h2>
       <div id="status-message">Ready.</div>
     </section>
 
-    <section>
+    <section class="leaderboard-section">
       <h2>Leaderboard</h2>
       <ol id="leaderboard-list"></ol>
     </section>
   </main>
 
-  <script type="module" src="./scripts/controllers/game-controller.js"></script>
+  <footer>
+    <p>
+      <a href="https://validator.w3.org/nu/" target="_blank" rel="noopener noreferrer">Nu HTML Checker</a>
+      &nbsp;|&nbsp;
+      <a href="https://github.com/ehassan256417-afk/game-score" target="_blank" rel="noopener noreferrer">Hassan's GitHub Repo</a>
+    </p>
+    <p class="author">Hassan Alnabres &mdash; Game Score Project</p>
+  </footer>
+
+  <script type="module" src="./js/game-controller.js"></script>
 </body>
 </html>
